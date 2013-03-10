@@ -14,7 +14,7 @@ class diffmerge{
     path    => '/usr/bin/diffmerge',
     content => template('diffmerge/diffmerge.sh.erb'),
     require => Package['diffmerge'],
-    mode    => 644,
+    mode    => 755,
     owner   => root,
     group   => wheel,
   }
