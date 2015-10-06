@@ -11,7 +11,7 @@ class diffmerge{
   }
 
   file { 'diffmerge_script' :
-    path    => '/usr/bin/diffmerge',
+    path    => '/usr/local/bin/diffmerge',
     content => template('diffmerge/diffmerge.sh.erb'),
     require => Package['diffmerge'],
     mode    => 755,
